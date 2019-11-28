@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+
+    <style>
+        .toggler { width: 500px; height: 200px; position: relative; }
+        #button { padding: 1em; text-decoration: none; }
+        #effect { width: 240px;  padding: 1em; border: 1px solid #000; background: #eee; color: #333; }
+        .newClass { text-indent: 40px; letter-spacing: .4em; width: 410px; height: 120px; padding: 30px; margin: 10px; font-size: 1.1em; }
+    </style>
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script>
+        $( function() {
+            $( "#button" ).on( "click", function() {
+                $( "#effect" ).addClass( "newClass", 500 ,callback());
+            });
+
+            function callback() {
+                setTimeout(function() {
+                    $( "#effect" ).removeClass( "newClass" );
+                }, 1500 );
+            }
+        } );
+    </script>
+</head>
+<body>
+<div class="toggler">
+    <div id="effect" class="ui-corner-all">
+        Hello it me John.How are you :3
+    </div>
+</div>
+
+<button id="button" class="ui-state-default ui-corner-all">Run Effect</button>
+</body>
+</html>

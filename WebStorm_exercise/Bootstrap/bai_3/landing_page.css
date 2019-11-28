@@ -1,0 +1,19 @@
+div.header{
+    background:bisque;
+    width: 100%;
+    height: 80px;
+}
+div.col-4{
+    /*width: 100px;*/
+    height: 200px;
+    background: aqua;
+}
+div.col-8{
+    /*width: 100px;*/
+    height: 400px;
+    background: antiquewhite;
+}
+div.col-12{
+    height: 200px;
+    background: black;
+}

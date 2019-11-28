@@ -1,0 +1,36 @@
+.header {
+    width: 100%;
+    height: 100px;
+    line-height: 70px;
+    background: black;
+    position: fixed ;
+    top: 0;
+
+}
+.body{
+    margin:0;
+}
+
+.header a{
+
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 20px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.main{
+    clear: both;
+    width: 70%;
+    height: 300px;
+    line-height: 70px;
+
+}
+.contain{
+    width: 70%;
+    height: 150px;
+    background: antiquewhite;
+}
